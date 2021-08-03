@@ -1,3 +1,5 @@
+### First rows are just basic commands to learn Python
+
 #Import some relevant libraries
 
 import math as mt 
