@@ -34,9 +34,9 @@ for file in Path(folder).glob('*.csv'):
 
     df_new = df.drop(columns = ['Date'])
 
-    df_train = df_new.loc[df['Date_Adj'] < dt.datetime.strptime("2019-10-01", format_date).date()]
+    df_train = df_new.loc[df['Date_Adj'] < dt.datetime.strptime("2020-01-31", format_date).date()]
 
-    df_test = df_new.loc[df['Date_Adj'] >= dt.datetime.strptime("2019-10-01", format_date).date()]
+    df_test = df_new.loc[df['Date_Adj'] >= dt.datetime.strptime("2020-01-31", format_date).date()]
     
     df.reset_index()
 
